@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+    id 'application'
+	id 'eclipse'
+}
+
+// Define the main class for the application
+mainClassName = 'de.danielweidle.codewars.App'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+    compile 'com.google.guava:guava:23.0'
+	compile 'org.apache.commons:commons-lang3:3.7'
+    testCompile 'junit:junit:4.12'
+}
+
+eclipse {
+    classpath {
+        downloadJavadoc = true
+        downloadSources = true
+    }
+}
+
+repositories {
+    jcenter()
+}
