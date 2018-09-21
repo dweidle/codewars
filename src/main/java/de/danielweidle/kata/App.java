@@ -1,4 +1,4 @@
-package de.danielweidle.codewars;
+package de.danielweidle.kata;
 
 public class App {
 
