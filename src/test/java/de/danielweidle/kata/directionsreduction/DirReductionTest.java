@@ -13,4 +13,18 @@ public class DirReductionTest {
         assertArrayEquals("\"NORTH\",\"SOUTH\",\"SOUTH\",\"EAST\",\"WEST\",\"NORTH\"", new String[] {},
                 DirReduction.dirReduc(new String[] { "NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH" }));
     }
+
+    @Test
+    public void testDirReducShoudRemoveOppositDirectionsReduced() throws Exception {
+        final String[] result = DirReduction.dirReduc(new String[] { "NORTH", "SOUTH" });
+
+        assertArrayEquals(new String[] {}, result);
+    }
+
+    @Test
+    public void testDirNorthShouldReturnNorth() throws Exception {
+        final String[] result = DirReduction.dirReduc(new String[] { "NORTH" });
+
+        assertArrayEquals(new String[] { "NORTH" }, result);
+    }
 }
