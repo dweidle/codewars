@@ -2,7 +2,6 @@ plugins {
     id 'java'
     id 'application'
 	id 'eclipse'
-	id 'com.diffplug.gradle.spotless' version '3.24.0'
 }
 
 // Define the main class for the application
@@ -14,9 +13,6 @@ targetCompatibility = 1.8
 dependencies {
     compile 'com.google.guava:guava:23.0'
 	compile 'org.apache.commons:commons-lang3:3.7'
-	
-	runtime 'com.diffplug.spotless:spotless-plugin-gradle:3.24.0'
-	
     testCompile 'junit:junit:4.12'
 }
 
@@ -29,11 +25,4 @@ eclipse {
 
 repositories {
     jcenter()
-    maven { url 'https://plugins.gradle.org/m2/' }
-}
-
-spotless {
-    java {
-        googleJavaFormat()
-    }
 }
