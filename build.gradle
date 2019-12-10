@@ -7,13 +7,13 @@ plugins {
 // Define the main class for the application
 mainClassName = 'de.danielweidle.codewars.App'
 
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
+sourceCompatibility = JavaVersion.VERSION_11;
+targetCompatibility = JavaVersion.VERSION_11;
 
 dependencies {
-    compile 'com.google.guava:guava:23.0'
-	compile 'org.apache.commons:commons-lang3:3.7'
-    testCompile 'junit:junit:4.12'
+    implementation 'com.google.guava:guava:23.0'
+	implementation 'org.apache.commons:commons-lang3:3.7'
+    testImplementation 'junit:junit:4.12'
 }
 
 eclipse {
