@@ -3,6 +3,9 @@ package de.danielweidle.kata.weightsort;
 import java.util.Arrays;
 import java.util.stream.Collectors;
 
+/**
+ * https://www.codewars.com/kata/55c6126177c9441a570000cc
+ */
 public class WeightSort {
 
     public static String orderWeight(String strng) {
