@@ -8,3 +8,5 @@
  */
 
 rootProject.name = 'codewars'
+include("codewars-java")
+include("codewars-kotlin")
