@@ -6,6 +6,9 @@ fun assertInput(h: Double, bounce: Double, window: Double) {
     require(window < h)
 }
 
+/**
+ * https://www.codewars.com/kata/5544c7a5cb454edb3c000047
+ */
 fun bouncingBall(h: Double, bounce: Double, window: Double): Int {
     print("height=${h}, bounce=${bounce}, window=${window}")
     try {
